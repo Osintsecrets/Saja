@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="utilities.pageTitle">Utilities · Project Saja</title>
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script defer src="../assets/js/i18n.js"></script>
+    <script defer src="../assets/js/utilities.js"></script>
+  </head>
+  <body class="layout">
+    <header class="topbar">
+      <div class="brand compact">
+        <a href="../index.html" class="brand-mark" aria-label="Project Saja">🛡️</a>
+        <div>
+          <h1 data-i18n="utilities.heading">Utilities</h1>
+          <p data-i18n="utilities.tagline">Encoders, regex, timestamps, and more in one pane.</p>
+        </div>
+      </div>
+      <nav class="language-switcher" aria-label="Language selector">
+        <button data-lang="en" class="lang active">EN</button>
+        <button data-lang="no" class="lang">NO</button>
+        <button data-lang="ar" class="lang">AR</button>
+      </nav>
+    </header>
+
+    <main class="workspace stacked">
+      <section class="pane card-grid">
+        <article class="card" data-tool="encoder">
+          <header>
+            <h2 data-i18n="utilities.encoders">Encoders &amp; decoders</h2>
+          </header>
+          <div class="card-body">
+            <select id="codec-type" class="input">
+              <option value="base64">Base64</option>
+              <option value="url">URL</option>
+              <option value="rot13">ROT13</option>
+              <option value="hex">Hex</option>
+            </select>
+            <textarea id="codec-input" rows="3" placeholder="payload"></textarea>
+            <div class="actions">
+              <button class="btn" id="encode" data-i18n="utilities.encode">Encode</button>
+              <button class="btn ghost" id="decode" data-i18n="utilities.decode">Decode</button>
+            </div>
+            <pre class="output" id="codec-output"></pre>
+          </div>
+        </article>
+        <article class="card" data-tool="regex">
+          <header>
+            <h2 data-i18n="utilities.regex">Regex tester</h2>
+          </header>
+          <div class="card-body">
+            <input id="regex-pattern" class="input" placeholder="/pattern/flags" />
+            <textarea id="regex-test" rows="3" placeholder="Sample text"></textarea>
+            <pre class="output" id="regex-result"></pre>
+          </div>
+        </article>
+        <article class="card" data-tool="time">
+          <header>
+            <h2 data-i18n="utilities.time">Timestamp ⇄ ISO</h2>
+          </header>
+          <div class="card-body">
+            <input id="timestamp-input" class="input" placeholder="1698787200" />
+            <button class="btn" id="convert-time" data-i18n="utilities.convert">Convert</button>
+            <pre class="output" id="time-output"></pre>
+          </div>
+        </article>
+        <article class="card" data-tool="uuid">
+          <header>
+            <h2 data-i18n="utilities.uuid">UUID &amp; secrets</h2>
+          </header>
+          <div class="card-body">
+            <button class="btn" id="generate-uuid" data-i18n="utilities.generateUuid">Generate UUID</button>
+            <button class="btn ghost" id="generate-password" data-i18n="utilities.generatePassword">Random password</button>
+            <pre class="output" id="uuid-output"></pre>
+          </div>
+        </article>
+        <article class="card" data-tool="http">
+          <header>
+            <h2 data-i18n="utilities.http">HTTP builder</h2>
+          </header>
+          <div class="card-body">
+            <select id="http-method" class="input">
+              <option>GET</option>
+              <option>POST</option>
+              <option>PUT</option>
+              <option>DELETE</option>
+            </select>
+            <input id="http-url" class="input" placeholder="https://target" />
+            <textarea id="http-body" rows="3" placeholder="JSON body"></textarea>
+            <pre class="output" id="http-output"></pre>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

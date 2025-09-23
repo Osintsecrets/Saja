@@ -1,0 +1,112 @@
+{
+  "brand": {
+    "name": "Project Saja",
+    "tagline": "Your all-in-one cybersecurity utility hub."
+  },
+  "hero": {
+    "title": "A Swiss Army knife for cyber students & consultants.",
+    "subtitle": "Streamline recon, reporting, and professional growth with sleek, battle-tested tools.",
+    "cta": "Launch the hub",
+    "tour": "Explore modules"
+  },
+  "modules": {
+    "cheatSheets": { "title": "Cheat Sheets", "desc": "Instant references for Bash, networking, web, and more.", "link": "Open" },
+    "commandBuilders": { "title": "Command Builders", "desc": "Compose nmap, ffuf, and hydra commands with smart toggles.", "link": "Open" },
+    "evidenceLogger": { "title": "Evidence Logger", "desc": "Capture timestamps, hashes, and notes for every finding.", "link": "Open" },
+    "reportStudio": { "title": "Report Studio", "desc": "Build multilingual reports with CVSS and redaction support.", "link": "Open" },
+    "utilities": { "title": "Utilities", "desc": "Encoders, regex tester, UUID tools, and more.", "link": "Open" },
+    "practice": { "title": "Practice Helpers", "desc": "CTF aids, steg checklist, and safe vulnerable widgets.", "link": "Open" },
+    "professional": { "title": "Professional Toolkit", "desc": "Resumes, interview prep, and portfolio polish.", "link": "Open" }
+  },
+  "footer": {
+    "note": "Built for Saja and peers chasing cyber excellence."
+  },
+  "cheatSheets": {
+    "pageTitle": "Cheat Sheets · Project Saja",
+    "heading": "Cheat Sheets",
+    "tagline": "Battle-tested snippets for every phase.",
+    "copyAll": "Copy section",
+    "sidebar": {
+      "title": "Disciplines",
+      "hint": "Switch focus"
+    }
+  },
+  "commandBuilders": {
+    "pageTitle": "Command Builders · Project Saja",
+    "heading": "Command Builders",
+    "tagline": "Toggle, copy, and deploy smarter scans.",
+    "tools": "Tools",
+    "copy": "Copy command"
+  },
+  "evidence": {
+    "pageTitle": "Evidence Logger · Project Saja",
+    "heading": "Evidence Logger",
+    "tagline": "Keep defensible notes and hashes locally.",
+    "newEntry": "New entry",
+    "caseId": "Case ID",
+    "command": "Command",
+    "notes": "Notes",
+    "tags": "Tags",
+    "files": "Files",
+    "save": "Log evidence",
+    "timeline": "Timeline",
+    "localOnly": "Stored in-browser only.",
+    "exportMd": "Export .md",
+    "exportCsv": "Export .csv"
+  },
+  "reports": {
+    "pageTitle": "Report Studio · Project Saja",
+    "heading": "Report Studio",
+    "tagline": "Templates, CVSS, and polished exports in three languages.",
+    "templates": "Templates",
+    "redaction": "Redaction mode",
+    "cvss": {
+      "title": "CVSS v3.1 Calculator",
+      "vector": "Vector",
+      "calculate": "Calculate"
+    },
+    "editor": "Editor",
+    "editorHint": "Drop findings from the Evidence Logger.",
+    "insertEvidence": "Insert evidence",
+    "exportMd": "Export .md",
+    "exportPdf": "Export .pdf",
+    "preview": "Preview"
+  },
+  "utilities": {
+    "pageTitle": "Utilities · Project Saja",
+    "heading": "Utilities",
+    "tagline": "Encoders, regex, timestamps, and more in one pane.",
+    "encoders": "Encoders & decoders",
+    "encode": "Encode",
+    "decode": "Decode",
+    "regex": "Regex tester",
+    "time": "Timestamp ⇄ ISO",
+    "convert": "Convert",
+    "uuid": "UUID & secrets",
+    "generateUuid": "Generate UUID",
+    "generatePassword": "Random password",
+    "http": "HTTP builder"
+  },
+  "practice": {
+    "pageTitle": "Practice Helpers · Project Saja",
+    "heading": "Practice Helpers",
+    "tagline": "Stay lab-ready with CTF aids and safe payloads.",
+    "steg": "Stego checklist",
+    "ctf": "CTF helper",
+    "detectHash": "Identify hash",
+    "miniApps": "Mini vulnerable apps",
+    "flag": "Flag validator",
+    "validate": "Validate"
+  },
+  "career": {
+    "pageTitle": "Professional Toolkit · Project Saja",
+    "heading": "Professional Toolkit",
+    "tagline": "Polish reports, resumes, and interviews with cyber flair.",
+    "styleGuide": "Pentest report style guide",
+    "resume": "Security resume builder",
+    "generateResume": "Generate sections",
+    "interview": "Interview prep cards",
+    "portfolio": "Portfolio builder",
+    "generatePortfolio": "Generate showcase"
+  }
+}

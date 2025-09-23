@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="commandBuilders.pageTitle">Command Builders · Project Saja</title>
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script defer src="../assets/js/i18n.js"></script>
+    <script defer src="../assets/js/builders.js"></script>
+  </head>
+  <body class="layout">
+    <header class="topbar">
+      <div class="brand compact">
+        <a href="../index.html" class="brand-mark" aria-label="Project Saja">🛡️</a>
+        <div>
+          <h1 data-i18n="commandBuilders.heading">Command Builders</h1>
+          <p data-i18n="commandBuilders.tagline">Toggle, copy, and deploy smarter scans.</p>
+        </div>
+      </div>
+      <nav class="language-switcher" aria-label="Language selector">
+        <button data-lang="en" class="lang active">EN</button>
+        <button data-lang="no" class="lang">NO</button>
+        <button data-lang="ar" class="lang">AR</button>
+      </nav>
+    </header>
+
+    <main class="workspace">
+      <aside class="pane scroll">
+        <h2 data-i18n="commandBuilders.tools">Tools</h2>
+        <ul id="builder-tools" class="category-list"></ul>
+      </aside>
+      <section class="pane" aria-live="polite">
+        <header class="pane-header">
+          <div>
+            <h2 id="builder-title">nmap</h2>
+            <p id="builder-desc" class="muted"></p>
+          </div>
+          <div class="actions">
+            <button id="copy-command" class="btn" data-i18n="commandBuilders.copy">Copy command</button>
+          </div>
+        </header>
+        <form id="builder-options" class="option-grid"></form>
+        <pre class="command-preview"><code id="command-output">nmap</code></pre>
+      </section>
+    </main>
+  </body>
+</html>

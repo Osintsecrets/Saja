@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="reports.pageTitle">Report Studio · Project Saja</title>
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script defer src="../assets/js/i18n.js"></script>
+    <script defer src="../assets/js/report.js"></script>
+  </head>
+  <body class="layout">
+    <header class="topbar">
+      <div class="brand compact">
+        <a href="../index.html" class="brand-mark" aria-label="Project Saja">🛡️</a>
+        <div>
+          <h1 data-i18n="reports.heading">Report Studio</h1>
+          <p data-i18n="reports.tagline">Templates, CVSS, and polished exports in three languages.</p>
+        </div>
+      </div>
+      <nav class="language-switcher" aria-label="Language selector">
+        <button data-lang="en" class="lang active">EN</button>
+        <button data-lang="no" class="lang">NO</button>
+        <button data-lang="ar" class="lang">AR</button>
+      </nav>
+    </header>
+
+    <main class="workspace">
+      <aside class="pane scroll">
+        <h2 data-i18n="reports.templates">Templates</h2>
+        <select id="template-language" class="input">
+          <option value="en">English</option>
+          <option value="no">Norsk</option>
+          <option value="ar">العربية</option>
+        </select>
+        <ul id="template-list" class="category-list"></ul>
+        <button id="apply-redaction" class="btn ghost" data-i18n="reports.redaction">Redaction mode</button>
+        <section class="cvss" data-i18n-scope="reports.cvss">
+          <h3 data-i18n="title">CVSS v3.1 Calculator</h3>
+          <label>
+            <span data-i18n="vector">Vector</span>
+            <input id="cvss-vector" type="text" placeholder="CVSS:3.1/AV:N/AC:L/..." />
+          </label>
+          <button id="calc-cvss" class="btn" data-i18n="calculate">Calculate</button>
+          <p id="cvss-score" class="score">—</p>
+        </section>
+      </aside>
+      <section class="pane">
+        <header class="pane-header">
+          <div>
+            <h2 data-i18n="reports.editor">Editor</h2>
+            <p class="muted" data-i18n="reports.editorHint">Drop findings from the Evidence Logger.</p>
+          </div>
+          <div class="actions">
+            <button id="insert-evidence" class="btn ghost" data-i18n="reports.insertEvidence">Insert evidence</button>
+            <button id="export-markdown-report" class="btn" data-i18n="reports.exportMd">Export .md</button>
+            <button id="export-pdf-report" class="btn" data-i18n="reports.exportPdf">Export .pdf</button>
+          </div>
+        </header>
+        <textarea id="report-editor" class="editor" rows="20"></textarea>
+      </section>
+      <section class="pane preview" aria-live="polite">
+        <header class="pane-header">
+          <h2 data-i18n="reports.preview">Preview</h2>
+        </header>
+        <article id="report-preview" class="content"></article>
+      </section>
+    </main>
+  </body>
+</html>

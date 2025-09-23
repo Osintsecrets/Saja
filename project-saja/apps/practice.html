@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="practice.pageTitle">Practice Helpers · Project Saja</title>
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script defer src="../assets/js/i18n.js"></script>
+    <script defer src="../assets/js/practice.js"></script>
+  </head>
+  <body class="layout">
+    <header class="topbar">
+      <div class="brand compact">
+        <a href="../index.html" class="brand-mark" aria-label="Project Saja">🛡️</a>
+        <div>
+          <h1 data-i18n="practice.heading">Practice Helpers</h1>
+          <p data-i18n="practice.tagline">Stay lab-ready with CTF aids and safe payloads.</p>
+        </div>
+      </div>
+      <nav class="language-switcher" aria-label="Language selector">
+        <button data-lang="en" class="lang active">EN</button>
+        <button data-lang="no" class="lang">NO</button>
+        <button data-lang="ar" class="lang">AR</button>
+      </nav>
+    </header>
+
+    <main class="workspace stacked">
+      <section class="pane card-grid">
+        <article class="card">
+          <header>
+            <h2 data-i18n="practice.steg">Stego checklist</h2>
+          </header>
+          <ul class="checklist" id="steg-checklist"></ul>
+        </article>
+        <article class="card">
+          <header>
+            <h2 data-i18n="practice.ctf">CTF helper</h2>
+          </header>
+          <div class="card-body">
+            <input id="hash-input" class="input" placeholder="hash" />
+            <button id="detect-hash" class="btn" data-i18n="practice.detectHash">Identify hash</button>
+            <pre class="output" id="hash-output"></pre>
+            <textarea id="ctf-notes" rows="3" placeholder="Quick commands"></textarea>
+          </div>
+        </article>
+        <article class="card">
+          <header>
+            <h2 data-i18n="practice.miniApps">Mini vulnerable apps</h2>
+          </header>
+          <div class="card-body" id="mini-apps"></div>
+        </article>
+        <article class="card">
+          <header>
+            <h2 data-i18n="practice.flag">Flag validator</h2>
+          </header>
+          <div class="card-body">
+            <input id="flag-input" class="input" placeholder="FLAG{}" />
+            <button id="validate-flag" class="btn" data-i18n="practice.validate">Validate</button>
+            <p id="flag-result" class="muted"></p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

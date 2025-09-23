@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="evidence.pageTitle">Evidence Logger · Project Saja</title>
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script defer src="../assets/js/i18n.js"></script>
+    <script defer src="../assets/js/evidence.js"></script>
+  </head>
+  <body class="layout">
+    <header class="topbar">
+      <div class="brand compact">
+        <a href="../index.html" class="brand-mark" aria-label="Project Saja">🛡️</a>
+        <div>
+          <h1 data-i18n="evidence.heading">Evidence Logger</h1>
+          <p data-i18n="evidence.tagline">Keep defensible notes and hashes locally.</p>
+        </div>
+      </div>
+      <nav class="language-switcher" aria-label="Language selector">
+        <button data-lang="en" class="lang active">EN</button>
+        <button data-lang="no" class="lang">NO</button>
+        <button data-lang="ar" class="lang">AR</button>
+      </nav>
+    </header>
+
+    <main class="workspace">
+      <section class="pane form-pane">
+        <h2 data-i18n="evidence.newEntry">New entry</h2>
+        <form id="evidence-form" class="form-grid">
+          <label>
+            <span data-i18n="evidence.caseId">Case ID</span>
+            <input type="text" name="case" required />
+          </label>
+          <label>
+            <span data-i18n="evidence.command">Command</span>
+            <input type="text" name="command" required />
+          </label>
+          <label class="wide">
+            <span data-i18n="evidence.notes">Notes</span>
+            <textarea name="notes" rows="4" required></textarea>
+          </label>
+          <label>
+            <span data-i18n="evidence.tags">Tags</span>
+            <input type="text" name="tags" placeholder="recon, privesc" />
+          </label>
+          <label>
+            <span data-i18n="evidence.files">Files</span>
+            <input type="file" name="files" multiple />
+          </label>
+          <button class="btn" type="submit" data-i18n="evidence.save">Log evidence</button>
+        </form>
+      </section>
+      <section class="pane">
+        <header class="pane-header">
+          <div>
+            <h2 data-i18n="evidence.timeline">Timeline</h2>
+            <p class="muted" data-i18n="evidence.localOnly">Stored in-browser only.</p>
+          </div>
+          <div class="actions">
+            <button class="btn ghost" id="export-markdown" data-i18n="evidence.exportMd">Export .md</button>
+            <button class="btn ghost" id="export-csv" data-i18n="evidence.exportCsv">Export .csv</button>
+          </div>
+        </header>
+        <div class="filters">
+          <input type="search" id="search" placeholder="Search tags or notes" />
+          <select id="tag-filter"></select>
+        </div>
+        <ul id="evidence-list" class="timeline"></ul>
+      </section>
+    </main>
+  </body>
+</html>
