@@ -1,0 +1,35 @@
+html[dir='rtl'] {
+  font-family: 'Noto Sans Arabic', 'Inter', sans-serif;
+}
+
+html[dir='rtl'] body {
+  direction: rtl;
+}
+
+html[dir='rtl'] .language-switcher {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .module::after {
+  inset: -40% auto auto -40%;
+}
+
+html[dir='rtl'] .pane-header,
+html[dir='rtl'] .hero-actions {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .category-list button.active,
+html[dir='rtl'] .category-list li.active {
+  transform: translateX(-4px);
+}
+
+html[dir='rtl'] .workspace {
+  direction: rtl;
+}
+
+html[dir='rtl'] pre,
+html[dir='rtl'] textarea,
+html[dir='rtl'] .content.code {
+  direction: ltr;
+}

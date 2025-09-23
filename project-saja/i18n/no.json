@@ -1,0 +1,112 @@
+{
+  "brand": {
+    "name": "Project Saja",
+    "tagline": "Ditt komplette verktøysett for cybersikkerhet."
+  },
+  "hero": {
+    "title": "En sveitsisk lommekniv for studenter og konsulenter.",
+    "subtitle": "Effektiviser rekognosering, rapportering og karriere med profesjonelle verktøy.",
+    "cta": "Start huben",
+    "tour": "Utforsk moduler"
+  },
+  "modules": {
+    "cheatSheets": { "title": "Jukselapper", "desc": "Umiddelbare referanser for Bash, nettverk, web og mer.", "link": "Åpne" },
+    "commandBuilders": { "title": "Kommandobygger", "desc": "Sett sammen nmap, ffuf og hydra med smarte flagg.", "link": "Åpne" },
+    "evidenceLogger": { "title": "Bevislogg", "desc": "Fang tidsstempel, hasher og notater for hvert funn.", "link": "Åpne" },
+    "reportStudio": { "title": "Rapportstudio", "desc": "Bygg flerspråklige rapporter med CVSS og redigering.", "link": "Åpne" },
+    "utilities": { "title": "Verktøy", "desc": "Enkodere, regex-tester, UUID og mer.", "link": "Åpne" },
+    "practice": { "title": "Øvingshjelpere", "desc": "CTF-støtte, steg-sjekkliste og trygge mini-apper.", "link": "Åpne" },
+    "professional": { "title": "Proff verktøykasse", "desc": "CV-er, intervjuer og portefølje i sikkerhetsstil.", "link": "Åpne" }
+  },
+  "footer": {
+    "note": "Bygget for Saja og medstudenter som vil bli best i sikkerhet."
+  },
+  "cheatSheets": {
+    "pageTitle": "Jukselapper · Project Saja",
+    "heading": "Jukselapper",
+    "tagline": "Praktiske utdrag for hvert steg.",
+    "copyAll": "Kopier seksjon",
+    "sidebar": {
+      "title": "Disipliner",
+      "hint": "Bytt fokus"
+    }
+  },
+  "commandBuilders": {
+    "pageTitle": "Kommandobygger · Project Saja",
+    "heading": "Kommandobygger",
+    "tagline": "Toggle, kopier og kjør smartere skanninger.",
+    "tools": "Verktøy",
+    "copy": "Kopier kommando"
+  },
+  "evidence": {
+    "pageTitle": "Bevislogg · Project Saja",
+    "heading": "Bevislogg",
+    "tagline": "Hold sporbare notater og hasher lokalt.",
+    "newEntry": "Ny oppføring",
+    "caseId": "Saks-ID",
+    "command": "Kommando",
+    "notes": "Notater",
+    "tags": "Tagger",
+    "files": "Filer",
+    "save": "Lagre bevis",
+    "timeline": "Tidslinje",
+    "localOnly": "Lagres kun i nettleseren.",
+    "exportMd": "Eksporter .md",
+    "exportCsv": "Eksporter .csv"
+  },
+  "reports": {
+    "pageTitle": "Rapportstudio · Project Saja",
+    "heading": "Rapportstudio",
+    "tagline": "Maler, CVSS og pene eksporter på tre språk.",
+    "templates": "Maler",
+    "redaction": "Redigeringsmodus",
+    "cvss": {
+      "title": "CVSS v3.1-kalkulator",
+      "vector": "Vektor",
+      "calculate": "Beregn"
+    },
+    "editor": "Redaktør",
+    "editorHint": "Dra inn funn fra bevisloggen.",
+    "insertEvidence": "Sett inn bevis",
+    "exportMd": "Eksporter .md",
+    "exportPdf": "Eksporter .pdf",
+    "preview": "Forhåndsvisning"
+  },
+  "utilities": {
+    "pageTitle": "Verktøy · Project Saja",
+    "heading": "Verktøy",
+    "tagline": "Enkodere, regex, tidsstempler og mer på ett sted.",
+    "encoders": "Enkodere og dekodere",
+    "encode": "Enkod",
+    "decode": "Dekod",
+    "regex": "Regex-tester",
+    "time": "Tidsstempel ⇄ ISO",
+    "convert": "Konverter",
+    "uuid": "UUID og hemmeligheter",
+    "generateUuid": "Generer UUID",
+    "generatePassword": "Tilfeldig passord",
+    "http": "HTTP-bygger"
+  },
+  "practice": {
+    "pageTitle": "Øvingshjelpere · Project Saja",
+    "heading": "Øvingshjelpere",
+    "tagline": "Vær klar til labben med CTF-støtte og trygge payloads.",
+    "steg": "Stego-sjekkliste",
+    "ctf": "CTF-hjelper",
+    "detectHash": "Identifiser hash",
+    "miniApps": "Mini-sårbare apper",
+    "flag": "Flaggvalidator",
+    "validate": "Valider"
+  },
+  "career": {
+    "pageTitle": "Proff verktøykasse · Project Saja",
+    "heading": "Proff verktøykasse",
+    "tagline": "Puss på rapporter, CV og intervjuer med sikkerhetsprofil.",
+    "styleGuide": "Stilguide for pentest-rapporter",
+    "resume": "CV-bygger for sikkerhet",
+    "generateResume": "Lag seksjoner",
+    "interview": "Intervjuspørsmål",
+    "portfolio": "Porteføljebygger",
+    "generatePortfolio": "Lag showcase"
+  }
+}

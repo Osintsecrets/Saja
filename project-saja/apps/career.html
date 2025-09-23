@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="career.pageTitle">Professional Toolkit · Project Saja</title>
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script defer src="../assets/js/i18n.js"></script>
+    <script defer src="../assets/js/career.js"></script>
+  </head>
+  <body class="layout">
+    <header class="topbar">
+      <div class="brand compact">
+        <a href="../index.html" class="brand-mark" aria-label="Project Saja">🛡️</a>
+        <div>
+          <h1 data-i18n="career.heading">Professional Toolkit</h1>
+          <p data-i18n="career.tagline">Polish reports, resumes, and interviews with cyber flair.</p>
+        </div>
+      </div>
+      <nav class="language-switcher" aria-label="Language selector">
+        <button data-lang="en" class="lang active">EN</button>
+        <button data-lang="no" class="lang">NO</button>
+        <button data-lang="ar" class="lang">AR</button>
+      </nav>
+    </header>
+
+    <main class="workspace stacked">
+      <section class="pane card-grid">
+        <article class="card">
+          <header>
+            <h2 data-i18n="career.styleGuide">Pentest report style guide</h2>
+          </header>
+          <div class="card-body" id="style-guide"></div>
+        </article>
+        <article class="card">
+          <header>
+            <h2 data-i18n="career.resume">Security resume builder</h2>
+          </header>
+          <div class="card-body">
+            <input id="resume-name" class="input" placeholder="Full name" />
+            <textarea id="resume-summary" rows="3" placeholder="Impact-driven summary"></textarea>
+            <button id="generate-resume" class="btn" data-i18n="career.generateResume">Generate sections</button>
+            <pre class="output" id="resume-output"></pre>
+          </div>
+        </article>
+        <article class="card">
+          <header>
+            <h2 data-i18n="career.interview">Interview prep cards</h2>
+          </header>
+          <div class="card-body" id="interview-cards"></div>
+        </article>
+        <article class="card">
+          <header>
+            <h2 data-i18n="career.portfolio">Portfolio builder</h2>
+          </header>
+          <div class="card-body">
+            <textarea id="portfolio-source" rows="3" placeholder="Paste sanitized finding"></textarea>
+            <button id="generate-portfolio" class="btn" data-i18n="career.generatePortfolio">Generate showcase</button>
+            <article class="content" id="portfolio-output"></article>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

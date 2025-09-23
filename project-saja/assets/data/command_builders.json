@@ -1,0 +1,38 @@
+{
+  "tools": [
+    {
+      "id": "nmap",
+      "name": "nmap",
+      "description": "Network mapper with fast, scriptable scans.",
+      "base": "nmap",
+      "options": [
+        { "type": "checkbox", "flag": "-sC", "label": "Default scripts" },
+        { "type": "checkbox", "flag": "-sV", "label": "Service detection" },
+        { "type": "text", "flag": "-p", "label": "Ports", "placeholder": "1-65535" },
+        { "type": "text", "flag": "-oN", "label": "Output file", "placeholder": "scan.txt" }
+      ]
+    },
+    {
+      "id": "ffuf",
+      "name": "ffuf",
+      "description": "Blazing fast fuzzer for directories and parameters.",
+      "base": "ffuf",
+      "options": [
+        { "type": "text", "flag": "-u", "label": "URL", "placeholder": "https://target/FUZZ" },
+        { "type": "text", "flag": "-w", "label": "Wordlist", "placeholder": "/usr/share/wordlists/" },
+        { "type": "text", "flag": "-H", "label": "Header", "placeholder": "Host: FUZZ" }
+      ]
+    },
+    {
+      "id": "hydra",
+      "name": "hydra",
+      "description": "Network logon cracker supporting many protocols.",
+      "base": "hydra",
+      "options": [
+        { "type": "text", "flag": "-L", "label": "User list", "placeholder": "users.txt" },
+        { "type": "text", "flag": "-P", "label": "Password list", "placeholder": "rockyou.txt" },
+        { "type": "text", "flag": "", "label": "Target", "placeholder": "ssh://user@host" }
+      ]
+    }
+  ]
+}

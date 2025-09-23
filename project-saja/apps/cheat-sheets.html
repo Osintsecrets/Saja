@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="cheatSheets.pageTitle">Cheat Sheets · Project Saja</title>
+    <link rel="stylesheet" href="../assets/css/theme.css" />
+    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script defer src="../assets/js/i18n.js"></script>
+    <script defer src="../assets/js/cheat-sheets.js"></script>
+  </head>
+  <body class="layout">
+    <header class="topbar">
+      <div class="brand compact">
+        <a href="../index.html" class="brand-mark" aria-label="Project Saja">🛡️</a>
+        <div>
+          <h1 data-i18n="cheatSheets.heading">Cheat Sheets</h1>
+          <p data-i18n="cheatSheets.tagline">Battle-tested snippets for every phase.</p>
+        </div>
+      </div>
+      <nav class="language-switcher" aria-label="Language selector">
+        <button data-lang="en" class="lang active">EN</button>
+        <button data-lang="no" class="lang">NO</button>
+        <button data-lang="ar" class="lang">AR</button>
+      </nav>
+    </header>
+
+    <main class="workspace">
+      <aside class="pane" data-i18n-scope="cheatSheets.sidebar">
+        <h2 data-i18n="title">Disciplines</h2>
+        <ul id="cheat-categories" class="category-list" data-i18n="hint">
+          <!-- populated via JS -->
+        </ul>
+      </aside>
+      <section class="pane" aria-live="polite">
+        <header class="pane-header">
+          <h2 id="cheat-title">Bash &amp; Linux</h2>
+          <div class="actions">
+            <button id="copy-section" class="btn" data-i18n="cheatSheets.copyAll">Copy section</button>
+          </div>
+        </header>
+        <div id="cheat-content" class="content code"></div>
+      </section>
+    </main>
+  </body>
+</html>
