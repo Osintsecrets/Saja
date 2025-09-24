@@ -10,6 +10,18 @@ html[dir='rtl'] .language-switcher {
   flex-direction: row-reverse;
 }
 
+html[dir='rtl'] .main-nav {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .topbar-main {
+  flex-direction: row-reverse;
+}
+
+html[dir='rtl'] .brand-copy {
+  text-align: right;
+}
+
 html[dir='rtl'] .module::after {
   inset: -40% auto auto -40%;
 }

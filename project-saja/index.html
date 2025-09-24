@@ -1,22 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Saja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="meta.homeTitle">Project Saja · Your all-in-one cybersecurity utility hub.</title>
+    <link rel="icon" type="image/svg+xml" href="assets/icons/logo.svg" />
     <link rel="manifest" href="manifest.json" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              neon: '#00d4ff',
+              violet: '#7c5cff',
+            },
+            fontFamily: {
+              sans: ['Inter', 'Noto Sans Arabic', 'system-ui', 'sans-serif'],
+              mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+            },
+          },
+        },
+      };
+    </script>
     <link rel="stylesheet" href="assets/css/theme.css" />
-    <link rel="stylesheet" href="assets/css/rtl.css" />
+    <script defer src="assets/js/ui.js"></script>
     <script defer src="assets/js/i18n.js"></script>
   </head>
   <body class="layout">
     <header class="topbar">
-      <div class="brand">
-        <span class="brand-mark">🛡️</span>
-        <div>
-          <h1 data-i18n="brand.name">Project Saja</h1>
-          <p data-i18n="brand.tagline">Your all-in-one cybersecurity utility hub.</p>
-        </div>
+      <div class="topbar-main">
+        <a class="brand" href="index.html" aria-label="Project Saja" data-i18n="brand.name" data-i18n-attr="aria-label">
+          <img src="assets/icons/logo.svg" alt="" aria-hidden="true" class="brand-logo" />
+          <div class="brand-copy" data-i18n-scope="brand">
+            <span class="brand-name" data-i18n="name">Project Saja</span>
+            <span class="brand-tagline" data-i18n="tagline">Your all-in-one cybersecurity utility hub.</span>
+          </div>
+        </a>
+        <nav class="main-nav" aria-label="Primary" data-i18n-scope="nav">
+          <a href="index.html" class="nav-link active" data-i18n="overview">Overview</a>
+          <a href="apps/cheat-sheets.html" class="nav-link" data-i18n="cheatSheets">Cheat Sheets</a>
+          <a href="apps/commands.html" class="nav-link" data-i18n="commandBuilders">Command Builders</a>
+          <a href="apps/reports.html" class="nav-link" data-i18n="reportStudio">Report Studio</a>
+          <a href="apps/evidence.html" class="nav-link" data-i18n="evidenceLogger">Evidence</a>
+          <a href="apps/utilities.html" class="nav-link" data-i18n="utilities">Utilities</a>
+          <a href="apps/practice.html" class="nav-link" data-i18n="practice">Practice</a>
+          <a href="apps/career.html" class="nav-link" data-i18n="career">Career</a>
+        </nav>
       </div>
       <nav class="language-switcher" aria-label="Language selector">
         <button data-lang="en" class="lang active">EN</button>
@@ -26,58 +57,71 @@
     </header>
 
     <main class="hub">
-      <section class="hero" data-i18n-scope="hero">
-        <h2 data-i18n="title">A Swiss Army knife for cyber students & consultants.</h2>
-        <p data-i18n="subtitle">
-          Streamline recon, reporting, and professional growth with sleek, battle-tested tools.
-        </p>
-        <div class="hero-actions">
-          <a href="apps/cheat-sheets.html" class="btn" data-i18n="cta">Launch the hub</a>
-          <a href="#modules" class="btn ghost" data-i18n="tour">Explore modules</a>
+      <section class="hero" data-i18n-scope="home.hero">
+        <div class="hero-copy">
+          <span class="hero-badge" data-i18n="badge">Cyber operations playbook</span>
+          <h1 data-i18n="title">Your all-in-one cybersecurity utility hub.</h1>
+          <p data-i18n="subtitle">
+            Assemble assessments faster with curated tools, multilingual reports, and pro polish.
+          </p>
+        </div>
+        <div class="hero-primary" data-i18n-scope="home.primary">
+          <a class="cta-card" href="apps/cheat-sheets.html" data-i18n-scope="cheatSheets">
+            <div class="cta-head">
+              <span class="cta-icon" aria-hidden="true">📚</span>
+              <span class="cta-chip" data-i18n="chip">Instant recall</span>
+            </div>
+            <h2 data-i18n="title">Cheat Sheets</h2>
+            <p data-i18n="description">Command snippets and context for every engagement.</p>
+            <span class="cta-action" data-i18n="action">Browse references →</span>
+          </a>
+          <a class="cta-card" href="apps/commands.html" data-i18n-scope="commandBuilders">
+            <div class="cta-head">
+              <span class="cta-icon" aria-hidden="true">🛠️</span>
+              <span class="cta-chip" data-i18n="chip">Adaptive presets</span>
+            </div>
+            <h2 data-i18n="title">Command Builders</h2>
+            <p data-i18n="description">Build flawless nmap, ffuf, and hydra commands in seconds.</p>
+            <span class="cta-action" data-i18n="action">Craft commands →</span>
+          </a>
+          <a class="cta-card" href="apps/reports.html" data-i18n-scope="reportStudio">
+            <div class="cta-head">
+              <span class="cta-icon" aria-hidden="true">📝</span>
+              <span class="cta-chip" data-i18n="chip">Client ready</span>
+            </div>
+            <h2 data-i18n="title">Report Studio</h2>
+            <p data-i18n="description">Live Markdown, CVSS automation, and sanitised exports.</p>
+            <span class="cta-action" data-i18n="action">Launch studio →</span>
+          </a>
         </div>
       </section>
 
-      <section id="modules" class="module-grid">
-        <article class="module" data-i18n-scope="modules.cheatSheets">
-          <h3 data-i18n="title">Cheat Sheets</h3>
-          <p data-i18n="desc">Instant references for Bash, networking, web, and more.</p>
-          <a href="apps/cheat-sheets.html" class="link" data-i18n="link">Open</a>
-        </article>
-        <article class="module" data-i18n-scope="modules.commandBuilders">
-          <h3 data-i18n="title">Command Builders</h3>
-          <p data-i18n="desc">Compose nmap, ffuf, and hydra commands with smart toggles.</p>
-          <a href="apps/commands.html" class="link" data-i18n="link">Open</a>
-        </article>
-        <article class="module" data-i18n-scope="modules.evidenceLogger">
+      <section class="module-grid" id="modules" data-i18n-scope="home.secondary">
+        <article class="module" data-i18n-scope="evidence">
           <h3 data-i18n="title">Evidence Logger</h3>
-          <p data-i18n="desc">Capture timestamps, hashes, and notes for every finding.</p>
-          <a href="apps/evidence.html" class="link" data-i18n="link">Open</a>
+          <p data-i18n="description">Capture hashes, notes, and artifacts with defensible timestamps.</p>
+          <a href="apps/evidence.html" class="link" data-i18n="action">Open module</a>
         </article>
-        <article class="module" data-i18n-scope="modules.reportStudio">
-          <h3 data-i18n="title">Report Studio</h3>
-          <p data-i18n="desc">Build multilingual reports with CVSS and redaction support.</p>
-          <a href="apps/reports.html" class="link" data-i18n="link">Open</a>
-        </article>
-        <article class="module" data-i18n-scope="modules.utilities">
+        <article class="module" data-i18n-scope="utilities">
           <h3 data-i18n="title">Utilities</h3>
-          <p data-i18n="desc">Encoders, regex tester, UUID tools, and more.</p>
-          <a href="apps/utilities.html" class="link" data-i18n="link">Open</a>
+          <p data-i18n="description">Encoders, regex testing, timestamp conversions, and HTTP snippets.</p>
+          <a href="apps/utilities.html" class="link" data-i18n="action">Open module</a>
         </article>
-        <article class="module" data-i18n-scope="modules.practice">
-          <h3 data-i18n="title">Practice Helpers</h3>
-          <p data-i18n="desc">CTF aids, steg checklist, and safe vulnerable widgets.</p>
-          <a href="apps/practice.html" class="link" data-i18n="link">Open</a>
+        <article class="module" data-i18n-scope="practice">
+          <h3 data-i18n="title">Practice</h3>
+          <p data-i18n="description">CTF helpers, steg checklist, and safe exploit demos.</p>
+          <a href="apps/practice.html" class="link" data-i18n="action">Open module</a>
         </article>
-        <article class="module" data-i18n-scope="modules.professional">
-          <h3 data-i18n="title">Professional Toolkit</h3>
-          <p data-i18n="desc">Resumes, interview prep, and portfolio polish.</p>
-          <a href="apps/career.html" class="link" data-i18n="link">Open</a>
+        <article class="module" data-i18n-scope="career">
+          <h3 data-i18n="title">Career</h3>
+          <p data-i18n="description">Resume builder, interview prep, and reporting style guide.</p>
+          <a href="apps/career.html" class="link" data-i18n="action">Open module</a>
         </article>
       </section>
     </main>
 
-    <footer class="footer">
-      <p data-i18n="footer.note">Built for Saja and peers chasing cyber excellence.</p>
+    <footer class="footer" data-i18n-scope="footer">
+      <p data-i18n="disclaimer">Use only with explicit authorization. Data stays local unless you export it.</p>
     </footer>
   </body>
 </html>
