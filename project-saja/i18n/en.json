@@ -1,25 +1,85 @@
 {
+  "meta": {
+    "homeTitle": "Project Saja · Your all-in-one cybersecurity utility hub."
+  },
   "brand": {
     "name": "Project Saja",
     "tagline": "Your all-in-one cybersecurity utility hub."
   },
-  "hero": {
-    "title": "A Swiss Army knife for cyber students & consultants.",
-    "subtitle": "Streamline recon, reporting, and professional growth with sleek, battle-tested tools.",
-    "cta": "Launch the hub",
-    "tour": "Explore modules"
+  "nav": {
+    "overview": "Overview",
+    "cheatSheets": "Cheat Sheets",
+    "commandBuilders": "Command Builders",
+    "reportStudio": "Report Studio",
+    "evidenceLogger": "Evidence",
+    "utilities": "Utilities",
+    "practice": "Practice",
+    "career": "Career"
   },
-  "modules": {
-    "cheatSheets": { "title": "Cheat Sheets", "desc": "Instant references for Bash, networking, web, and more.", "link": "Open" },
-    "commandBuilders": { "title": "Command Builders", "desc": "Compose nmap, ffuf, and hydra commands with smart toggles.", "link": "Open" },
-    "evidenceLogger": { "title": "Evidence Logger", "desc": "Capture timestamps, hashes, and notes for every finding.", "link": "Open" },
-    "reportStudio": { "title": "Report Studio", "desc": "Build multilingual reports with CVSS and redaction support.", "link": "Open" },
-    "utilities": { "title": "Utilities", "desc": "Encoders, regex tester, UUID tools, and more.", "link": "Open" },
-    "practice": { "title": "Practice Helpers", "desc": "CTF aids, steg checklist, and safe vulnerable widgets.", "link": "Open" },
-    "professional": { "title": "Professional Toolkit", "desc": "Resumes, interview prep, and portfolio polish.", "link": "Open" }
+  "home": {
+    "hero": {
+      "badge": "Cyber operations playbook",
+      "title": "Your all-in-one cybersecurity utility hub.",
+      "subtitle": "Assemble assessments faster with curated tools, multilingual reports, and pro polish."
+    },
+    "primary": {
+      "cheatSheets": {
+        "chip": "Instant recall",
+        "title": "Cheat Sheets",
+        "description": "Command snippets and context for every engagement.",
+        "action": "Browse references →"
+      },
+      "commandBuilders": {
+        "chip": "Adaptive presets",
+        "title": "Command Builders",
+        "description": "Build flawless nmap, ffuf, and hydra commands in seconds.",
+        "action": "Craft commands →"
+      },
+      "reportStudio": {
+        "chip": "Client ready",
+        "title": "Report Studio",
+        "description": "Live Markdown, CVSS automation, and sanitised exports.",
+        "action": "Launch studio →"
+      }
+    },
+    "secondary": {
+      "evidence": {
+        "title": "Evidence Logger",
+        "description": "Capture hashes, notes, and artifacts with defensible timestamps.",
+        "action": "Open module"
+      },
+      "utilities": {
+        "title": "Utilities",
+        "description": "Encoders, regex testing, timestamp conversions, and HTTP snippets.",
+        "action": "Open module"
+      },
+      "practice": {
+        "title": "Practice",
+        "description": "CTF helpers, steg checklist, and safe exploit demos.",
+        "action": "Open module"
+      },
+      "career": {
+        "title": "Career",
+        "description": "Resume builder, interview prep, and reporting style guide.",
+        "action": "Open module"
+      }
+    }
   },
   "footer": {
-    "note": "Built for Saja and peers chasing cyber excellence."
+    "note": "Built for Saja and peers chasing cyber excellence.",
+    "disclaimer": "Use only with explicit authorization. Data stays local unless you export it."
+  },
+  "toasts": {
+    "copied": "Copied to clipboard",
+    "copyError": "Copy failed"
+  },
+  "ui": {
+    "close": "Close"
+  },
+  "confirm": {
+    "destructive": "Are you sure? This cannot be undone.",
+    "ok": "Confirm",
+    "cancel": "Cancel"
   },
   "cheatSheets": {
     "pageTitle": "Cheat Sheets · Project Saja",
@@ -52,7 +112,12 @@
     "timeline": "Timeline",
     "localOnly": "Stored in-browser only.",
     "exportMd": "Export .md",
-    "exportCsv": "Export .csv"
+    "exportCsv": "Export .csv",
+    "actor": "Actor",
+    "category": "Category",
+    "origin": "Origin machine",
+    "filterTags": "Filter tags",
+    "clear": "Clear all"
   },
   "reports": {
     "pageTitle": "Report Studio · Project Saja",
@@ -70,7 +135,14 @@
     "insertEvidence": "Insert evidence",
     "exportMd": "Export .md",
     "exportPdf": "Export .pdf",
-    "preview": "Preview"
+    "preview": "Preview",
+    "title": "Title",
+    "client": "Client / Project",
+    "assessor": "Assessor",
+    "executiveSummary": "Executive summary",
+    "scope": "Scope",
+    "recommendations": "Recommendations",
+    "sanitisedBadge": "Sanitised"
   },
   "utilities": {
     "pageTitle": "Utilities · Project Saja",

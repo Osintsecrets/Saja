@@ -1,25 +1,85 @@
 {
+  "meta": {
+    "homeTitle": "Project Saja · Ditt komplette verktøysett for cybersikkerhet."
+  },
   "brand": {
     "name": "Project Saja",
     "tagline": "Ditt komplette verktøysett for cybersikkerhet."
   },
-  "hero": {
-    "title": "En sveitsisk lommekniv for studenter og konsulenter.",
-    "subtitle": "Effektiviser rekognosering, rapportering og karriere med profesjonelle verktøy.",
-    "cta": "Start huben",
-    "tour": "Utforsk moduler"
+  "nav": {
+    "overview": "Oversikt",
+    "cheatSheets": "Jukselapper",
+    "commandBuilders": "Kommandobygger",
+    "reportStudio": "Rapportstudio",
+    "evidenceLogger": "Bevis",
+    "utilities": "Verktøy",
+    "practice": "Øving",
+    "career": "Karriere"
   },
-  "modules": {
-    "cheatSheets": { "title": "Jukselapper", "desc": "Umiddelbare referanser for Bash, nettverk, web og mer.", "link": "Åpne" },
-    "commandBuilders": { "title": "Kommandobygger", "desc": "Sett sammen nmap, ffuf og hydra med smarte flagg.", "link": "Åpne" },
-    "evidenceLogger": { "title": "Bevislogg", "desc": "Fang tidsstempel, hasher og notater for hvert funn.", "link": "Åpne" },
-    "reportStudio": { "title": "Rapportstudio", "desc": "Bygg flerspråklige rapporter med CVSS og redigering.", "link": "Åpne" },
-    "utilities": { "title": "Verktøy", "desc": "Enkodere, regex-tester, UUID og mer.", "link": "Åpne" },
-    "practice": { "title": "Øvingshjelpere", "desc": "CTF-støtte, steg-sjekkliste og trygge mini-apper.", "link": "Åpne" },
-    "professional": { "title": "Proff verktøykasse", "desc": "CV-er, intervjuer og portefølje i sikkerhetsstil.", "link": "Åpne" }
+  "home": {
+    "hero": {
+      "badge": "Spillbok for cyberoperasjoner",
+      "title": "Ditt komplette verktøysett for cybersikkerhet.",
+      "subtitle": "Sett fart på vurderinger med kuraterte verktøy, flerspråklige rapporter og proff finish."
+    },
+    "primary": {
+      "cheatSheets": {
+        "chip": "Hurtig referanse",
+        "title": "Jukselapper",
+        "description": "Kommandoer og forklaringer for hvert steg i testen.",
+        "action": "Vis referanser →"
+      },
+      "commandBuilders": {
+        "chip": "Smidige profiler",
+        "title": "Kommandobygger",
+        "description": "Sett sammen nmap-, ffuf- og hydra-kommandoer på sekunder.",
+        "action": "Bygg kommandoer →"
+      },
+      "reportStudio": {
+        "chip": "Klar for kunde",
+        "title": "Rapportstudio",
+        "description": "Live Markdown, CVSS-automatisering og saniterte eksporter.",
+        "action": "Åpne studio →"
+      }
+    },
+    "secondary": {
+      "evidence": {
+        "title": "Bevislogg",
+        "description": "Fang hasher, notater og artefakter med sporbare tidsstempel.",
+        "action": "Åpne modul"
+      },
+      "utilities": {
+        "title": "Verktøy",
+        "description": "Enkodere, regex-testing, tidskonvertering og HTTP-snutter.",
+        "action": "Åpne modul"
+      },
+      "practice": {
+        "title": "Øving",
+        "description": "CTF-hjelp, steg-sjekkliste og trygge demoer.",
+        "action": "Åpne modul"
+      },
+      "career": {
+        "title": "Karriere",
+        "description": "CV-bygger, intervjutrening og stilguide for rapporter.",
+        "action": "Åpne modul"
+      }
+    }
   },
   "footer": {
-    "note": "Bygget for Saja og medstudenter som vil bli best i sikkerhet."
+    "note": "Bygget for Saja og medstudenter som vil bli best i sikkerhet.",
+    "disclaimer": "Bruk kun med eksplisitt godkjenning. Data forblir lokalt med mindre du eksporterer."
+  },
+  "toasts": {
+    "copied": "Kopiert til utklippstavlen",
+    "copyError": "Kopiering mislyktes"
+  },
+  "ui": {
+    "close": "Lukk"
+  },
+  "confirm": {
+    "destructive": "Er du sikker? Dette kan ikke angres.",
+    "ok": "Bekreft",
+    "cancel": "Avbryt"
   },
   "cheatSheets": {
     "pageTitle": "Jukselapper · Project Saja",
@@ -52,7 +112,12 @@
     "timeline": "Tidslinje",
     "localOnly": "Lagres kun i nettleseren.",
     "exportMd": "Eksporter .md",
-    "exportCsv": "Eksporter .csv"
+    "exportCsv": "Eksporter .csv",
+    "actor": "Utfører",
+    "category": "Kategori",
+    "origin": "Opprinnelsesmaskin",
+    "filterTags": "Filtrer tagger",
+    "clear": "Tøm alt"
   },
   "reports": {
     "pageTitle": "Rapportstudio · Project Saja",
@@ -70,7 +135,14 @@
     "insertEvidence": "Sett inn bevis",
     "exportMd": "Eksporter .md",
     "exportPdf": "Eksporter .pdf",
-    "preview": "Forhåndsvisning"
+    "preview": "Forhåndsvisning",
+    "title": "Tittel",
+    "client": "Kunde / Prosjekt",
+    "assessor": "Revisor",
+    "executiveSummary": "Lederoppsummering",
+    "scope": "Omfang",
+    "recommendations": "Anbefalinger",
+    "sanitisedBadge": "Sanitert"
   },
   "utilities": {
     "pageTitle": "Verktøy · Project Saja",

@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="cheatSheets.pageTitle">Cheat Sheets · Project Saja</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: { neon: '#00d4ff', violet: '#7c5cff' },
+            fontFamily: {
+              sans: ['Inter', 'Noto Sans Arabic', 'system-ui', 'sans-serif'],
+              mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+            },
+          },
+        },
+      };
+    </script>
     <link rel="stylesheet" href="../assets/css/theme.css" />
-    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script defer src="../assets/js/ui.js"></script>
     <script defer src="../assets/js/i18n.js"></script>
     <script defer src="../assets/js/cheat-sheets.js"></script>
   </head>
@@ -28,7 +43,7 @@
     <main class="workspace">
       <aside class="pane" data-i18n-scope="cheatSheets.sidebar">
         <h2 data-i18n="title">Disciplines</h2>
-        <ul id="cheat-categories" class="category-list" data-i18n="hint">
+        <ul id="cheat-categories" class="category-list" aria-live="polite">
           <!-- populated via JS -->
         </ul>
       </aside>
@@ -39,7 +54,7 @@
             <button id="copy-section" class="btn" data-i18n="cheatSheets.copyAll">Copy section</button>
           </div>
         </header>
-        <div id="cheat-content" class="content code"></div>
+        <pre id="cheat-content" class="content code"></pre>
       </section>
     </main>
   </body>

@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title data-i18n="commandBuilders.pageTitle">Command Builders · Project Saja</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: { neon: '#00d4ff', violet: '#7c5cff' },
+            fontFamily: {
+              sans: ['Inter', 'Noto Sans Arabic', 'system-ui', 'sans-serif'],
+              mono: ['JetBrains Mono', 'Fira Code', 'monospace'],
+            },
+          },
+        },
+      };
+    </script>
     <link rel="stylesheet" href="../assets/css/theme.css" />
-    <link rel="stylesheet" href="../assets/css/rtl.css" />
+    <script defer src="../assets/js/ui.js"></script>
     <script defer src="../assets/js/i18n.js"></script>
     <script defer src="../assets/js/builders.js"></script>
   </head>
